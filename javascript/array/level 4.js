@@ -11,7 +11,7 @@ const arr = ['ram','shyam','hari']
 // })
 //console.log(output)
  const output=arr.filter((item)=>{
-    if(item!==shyam){
+    if(item!=='shyam'){
         return item
     }
 })
@@ -28,9 +28,19 @@ console.log(output)
 // })
 //console.log(output)
 let total = 0
-const result = arr.forEach((item,id)=>{
+arr.forEach((item,id)=>{
 if(item.length=4){
     total = total+1
 }
 })
 console.log(total)
+
+let strCount = 0
+arr.forEach((item,id)=>{
+   strCount = strCount + item.length
+})
+console.log(strCount)
+
+
+
+
